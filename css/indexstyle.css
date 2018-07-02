@@ -1,0 +1,112 @@
+﻿:root {
+--fullGrid: 1 / 1 / -1 / -1;
+}
+* {
+    font-family: 'Roboto', sans-serif;
+}
+.container{
+    display:grid;
+    width:100%;
+ 
+    height:90vh;
+    grid-template-rows: 10vh 10vh 10vh 50vh 10vh ;
+    grid-template-columns: 1fr .25fr .75fr 1fr .75fr .25fr 1fr;
+    margin-bottom:1vh;
+}
+#bgvid {
+    grid-row: 2 /span 4;
+    grid-column: 2 /span 6;
+    min-height: 100%;
+    min-width: 100%;
+    max-height:100%;
+    grid-area: var(--fullGrid);
+    object-fit: cover;
+    z-index: -1;
+    background-color:green;
+}
+.brkt{
+    background-color:white;
+}
+.header{
+    margin-top:-3vh;
+    grid-column:1 /span 7;
+    grid-row:1 /span 1;
+    background-color:white;
+
+    flex-direction:row;
+    justify-content:flex-end;
+    align-items:center;
+}
+    .header > ul {
+        color: black;
+        font-size: 3vh;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-top:1vh;
+        justify-content:space-between
+    }
+    .header>ul>li{
+        list-style:none;
+        margin-left:0;
+    }
+    #logo{
+        height:10vh;
+        margin-top:1vh;
+        margin-left:0;
+    }
+.lnk {
+    text-decoration: none;
+    /*padding: 3vh 3vw 100% 3vw;*/
+
+    color:black;
+}
+    /*.lnk:hover{
+        background-color:black;
+        color:white;
+    }*/
+.maincontent{
+    grid-column:3 /span 3;
+    grid-row:4/span 1;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    margin-left:1vw;
+}
+#toptext{
+    color:white;
+    font-size:8vw;
+    margin-bottom:0;
+}
+#bottomtext{
+    color:white;
+    font-size:2vw;
+    margin-top:0;
+}
+
+/*BRACKET DESIGN START*/
+.sqbrkttp1{
+    grid-column:2 /span 2;
+    grid-row: 3 /span 1;
+}
+.sqbrkttp2{
+    grid-column:5 /span 2;
+    grid-row:3/span 1;
+}
+.sqbrktmid1{
+    grid-column:2/span 1;
+    grid-row:3 /span 3;
+}
+.sqbrktmid2{
+    grid-column:6/span 1;
+    grid-row:3/span 3;
+
+}
+.sqbrktbot1{
+    grid-row:5 /span 1;
+    grid-column:2/span 2;
+}
+.sqbrktbot2{
+    grid-row:5 /span 1;
+    grid-column:5 /span 2;
+}
