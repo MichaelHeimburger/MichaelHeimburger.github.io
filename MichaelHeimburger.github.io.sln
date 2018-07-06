@@ -21,6 +21,7 @@ Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "MichaelHeimburger.github.io
 		Release.AspNetCompiler.FixedNames = "false"
 		Release.AspNetCompiler.Debug = "False"
 		VWDPort = "56166"
+		SlnRelativePath = "..\MichaelHeimburger.github.io\"
 	EndProjectSection
 EndProject
 Global
