@@ -11,3 +11,14 @@
         vid.src = "images/waves3.mp4";
     }
 }
+
+function Info(x) {
+    
+    
+
+}
+function hideinfo() {
+
+    var x = document.getElementsByClassName("infowin")[0].style.display="none";
+
+}

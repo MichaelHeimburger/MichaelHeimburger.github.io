@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <title>MICHAELSOFT</title>
-    <script src="script/indexscripts.js"></script>
+    <script src="/script/indexscripts.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link href="css/indexstyle.css" rel="stylesheet" />
 </head>
@@ -19,7 +19,7 @@
             <ul>
                 <li><a href="index.html"><img id="logo" src="/images/mhlogo.png" /></a></li>
                 <li><a class="lnk" href="#info">INFO</a></li>
-                <li><a class="lnk" href="#skills">SKILLS</a></li>
+                <!--<li><a class="lnk" href="#skills">SKILLS</a></li>-->
                 <li><a class="lnk" href="#projects">PROJECTS</a></li>
                 <li><a class="lnk" href="#contact">CONTACT</a></li>
             </ul>
@@ -41,11 +41,23 @@
         </div>
 
         <div class="spacer2"></div>
-        <div id="skills" class="skills"></div>
+        <div id="skills" class="skills">
+        </div>
         <div class="spacer3"></div>
-        <div id="projects" class="projects"></div>
+        <div id="projects" class="projects">
+            <div  class="pj stkmkt" ><p class="p">Stock Market</p> </div>
+            <div  class="pj vpsh"><p class="p">Virtual Pet Shelter</p> </div>
+            <div  class="pj villa"><p class="p">Tuscany Villa Webpage</p> </div>
+            <div  class="pj this"><p class="p">MichaelSoft Webpage</p></div>
+
+
+        </div>
+
         <div class="spacer4"></div>
         <div id="contact" class="contact"></div>
+        <div class="infowin" onclick="hideinfo()">
+            <div class="center"></div>
+        </div>
     </div>
 </body>
 </html>
