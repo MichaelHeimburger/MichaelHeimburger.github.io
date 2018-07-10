@@ -12,13 +12,33 @@
     }
 }
 
-function Info(x) {
-    
-    
-
+function InfoSTK() {
+    document.getElementsByClassName('infowin')[0].style.display = "flex";
+    document.getElementsByClassName('center')[0].style.display = "flex";
+    document.getElementsByClassName('stkmktinfo')[0].style.display = "block";
+}
+function InfoVPS() {
+    document.getElementsByClassName('infowin')[0].style.display = "flex";
+    document.getElementsByClassName('center')[0].style.display = "flex";
+    document.getElementsByClassName('Virtualpetinfo')[0].style.display = "block";
 }
 function hideinfo() {
 
-    var x = document.getElementsByClassName("infowin")[0].style.display="none";
+    document.getElementsByClassName("infowin")[0].style.display="none";
+    document.getElementsByClassName('center')[0].style.display = "none";
+    document.getElementsByClassName('stkmktinfo')[0].style.display = "none";
+    document.getElementsByClassName('Virtualpetinfo')[0].style.display = "none";
+    document.getElementsByClassName('tucanyvillainfo')[0].style.display = "none";
+    document.getElementsByClassName('michaelsoftinfo')[0].style.display = "none";
 
+}
+function InfoTUS() {
+    document.getElementsByClassName('infowin')[0].style.display = "flex";
+    document.getElementsByClassName('center')[0].style.display = "flex";
+    document.getElementsByClassName('tucanyvillainfo')[0].style.display = "block";
+}
+function InfoMSO() {
+    document.getElementsByClassName('infowin')[0].style.display = "flex";
+    document.getElementsByClassName('center')[0].style.display = "flex";
+    document.getElementsByClassName('michaelsoftinfo')[0].style.display = "block";
 }

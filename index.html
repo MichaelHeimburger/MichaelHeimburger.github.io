@@ -8,7 +8,9 @@
     <link href="css/indexstyle.css" rel="stylesheet" />
 </head>
 <body onload="GetBG()">
+    
     <div class="container">
+        <div class="WIP"><p>WIP</p></div>
         <video autoplay muted loop id="bgvid">
             <!--background autoplay video-->
             <source id="swap1" src="images/waves.mp4" />
@@ -35,7 +37,7 @@
             <p id="bottomtext">Software by Michael Heimburger</p>
         </div>
         <div class="spacer"></div>
-        <div class="infotext name"><p>ABOUT ME</p></div>
+
         <div id="info" class="info">
             <img class="head" src="/images/headshot.jpg" />
             <p> Howdy I am Michael Heimburger a Full Stack Software Developer currently studying a wide range of concepts at We Can Code It. The website you are currently viewing has been hadcrafted by yours truly and is in its early stages of development. If your would like to contact me for anything please do so by any of the methods below.</p>
@@ -46,18 +48,52 @@
         </div>
         <div class="spacer3"></div>
         <div id="projects" class="projects">
-            <div  class="pj stkmkt" ><p class="p">Stock Market</p></div>
-            <div  class="pj vpsh"><p class="p">Virtual Pet Shelter</p></div>
-            <div  class="pj villa"><p class="p">Tuscany Villa Webpage</p></div>
-            <div  class="pj this"><p class="p">MichaelSoft Webpage</p></div>
-
+            <a onclick="InfoSTK()" class="pj stkmkt"><p class="p">Stock Market</p></a>
+            <a onclick="InfoVPS()" class="pj vpsh"><p class="p">Virtual Pet Shelter</p></a>
+            <a onclick="InfoTUS()" class="pj villa"><p class="p">Tuscany Villa Webpage</p></a>
+            <a onclick="InfoMSO()" class="pj this"><p class="p">MichaelSoft Webpage</p></a>
 
         </div>
 
         <div class="spacer4"></div>
-        <div id="contact" class="contact"></div>
+        <div id="contact" class="contact">
+            <ul>
+                <li> <p>EMAIL : mrheimburger45@gmail.com</p>  </li>
+                <li>  <p>PHONE : 440-364-9337</p>  </li>
+                <li>  <a href="https://www.linkedin.com/in/mheimburger/">LINKEDIN : /in/mheimburger/ </a> </li>
+                <li>  <a href="https://github.com/MichaelHeimburger">GITHUB : /MichaelHeimburger </a></li>
+            </ul>
+        </div>
         <div class="infowin" onclick="hideinfo()">
-            <div class="center"></div>
+            <div class="center">
+                <div class="stkmktinfo innerinfo">
+                    <img src="images/stockmarketpic.png" />
+                    <img src="images/stockmarketpic2.png" />
+                    <p>A C# console app that makes heavy use of OOP - by allowing the user to name any number of stocks and then trade them on an ever changing market. The stocks the user creates are added to a list which is displayed back to the user along with a randomly generated price, price history, and the amount the user currently owns. Prices are randomly generated and can be determined by in app "news" events allowing the user some sense of prediction. <br />For more information feel free to contact me or use the github link below</p>
+                    <a href="https://github.com/MichaelHeimburger/Stock-Market">GITHUB</a>
+                </div>
+                <div class="Virtualpetinfo innerinfo">
+                    <img src="images/petshelter.png" />
+                    <img src="/images/petshelter2.png" />
+                    <p>A C# console app using lists,  OOP, and inheritance. This app allows the user to take control of a "virtual pet shelter" in which they can manage the needs of a list of virtual pet classes. Upon each user input the nees of the classes change requing the user to feed/water/play with the group of pets to raise their values. Upon opening the application the user can choose between a manager or volunteer, each having different roles and methods to take use of while modifying the same classes. <br />For more information feel free to contact me or use the github link below</p>
+                    <a href="https://github.com/MichaelHeimburger/Virtual-Pet-Shelter-Project">GITHUB</a>
+                </div>
+                <div class="tucanyvillainfo innerinfo">
+                    <img src="images/tuskanyvilla.png" />
+                    <img src="/images/tuskanyvilla2.png" />
+                    <p>A Webpage made using CSS, CSSGRID,  FlexBox, and HTML5. This page was a project for WCCI with the task of replicating a webpage based on an image. The resulting page has a sleek modernist design and a responsive layout modeled enitrely with Grid/Flex-box. ,<br />For more information feel free to contact me or use the github link below</p>
+                    <a href="https://github.com/MichaelHeimburger/TuskanyVilla">GITHUB</a>
+                </div>
+                <div class="michaelsoftinfo innerinfo">
+                    <img src="images/sitepic.png" />
+                    <img src="/images/sitepic2.png" />
+                    <p>The site your are visiting currently has been handcrafted entirely by myself with CSS, CSS-Grid, Flex-Box, HTML5, and Javascript. This current webpage keeps the same content-size proportions on mobile and desktop maintaining both design and visibility. <br />For more information feel free to contact me or if you would like to view the code for this website the github link is below</p>
+                    <a href="https://github.com/MichaelHeimburger/MichaelHeimburger.github.io">GITHUB</a>
+                </div>
+
+
+            </div>
+
         </div>
     </div>
 </body>
