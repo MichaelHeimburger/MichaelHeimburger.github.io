@@ -5,10 +5,10 @@
         vid.src = "images/waves.mp4";
     }
     else if (x < 8) {
-        vid.src = "images/waves2.mp4";
+        vid.src = "images/waves3.mp4";
     }
     else {
-        vid.src = "images/waves3.mp4";
+        vid.src = "images/bluewater.mp4";
     }
 }
 
