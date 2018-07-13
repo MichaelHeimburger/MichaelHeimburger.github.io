@@ -176,15 +176,13 @@ body{
     background-size: cover;
     background-repeat: no-repeat;
     margin: 1vw;
-    border: .3vw outset ;
+    box-shadow: 3px 3px 5px black;
     overflow: auto;
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
 }
-    .pj:hover {
-        border:.3vw;
-    }
+
 .pj:hover >p{
     height:100%;
     width:100%;
