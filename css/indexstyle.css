@@ -121,6 +121,7 @@ body{
     box-shadow: 2px 2px 2px 2px black;
     background-color:none;
 }
+
 #maininfo {
     height: 100%;
     width: 100%;
@@ -135,7 +136,17 @@ body{
     height:100%;
     width:100%;
     display:none;
-    background-color:green;
+    background-color:white;
+    justify-content:space-between;
+    align-content:center;
+    align-items:center;
+}
+.skillcard {
+    height: 80%;
+    width: 21vw;
+    background-color: aquamarine;
+    box-shadow: 2px 2px 2px 2px black;
+    margin:2vw;
 }
 #infonavbar{
     background-color:none;

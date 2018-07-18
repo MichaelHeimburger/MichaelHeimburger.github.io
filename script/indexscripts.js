@@ -13,14 +13,12 @@
 }
 
     function SkillsSwap() {
-        alert('t');
         document.getElementById("maininfo").style.display = "none";
         document.getElementById("skillinfo").style.display = "flex";
         //document.getElementById("active").style.zIndex = "-1";
         //document.getElementById("nonactive").style.zIndex = "1";
     }
     function InfoSwap() {
-        alert('t');
         document.getElementById("skillinfo").style.display = "none";
         document.getElementById("maininfo").style.display = "flex";
         //document.getElementById("active").style.zIndex = "1";
