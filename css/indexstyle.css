@@ -12,7 +12,7 @@ body{
     display:grid;
     width:100%;
     height:90vh;
-    grid-template-rows: 10vh 10vh 5vw 20vw 5vw 20vh 30vw 20vh 1vw 10vw 40vw 20vh auto;
+    grid-template-rows: 10vh 10vh 5vw 20vw 5vw 20vh auto 20vh 1vh 20vh 40vw 20vh auto;
     grid-template-columns: 1fr .25fr .75fr 1fr .75fr .25fr 1fr;
     margin-bottom:1vh;
 }
@@ -142,30 +142,70 @@ body{
     align-items:center;
 }
 .skillcard {
-    height: 80%;
+    height: 40vw;
     width: 21vw;
-    background-color: aquamarine;
     box-shadow: 2px 2px 2px 2px black;
     margin:2vw;
+    font-size:2vw;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+    .skillcard > ul {
+        margin-top:0;
+        list-style: none;
+        display:flex;
+        align-items:flex-start;
+        flex-direction:column;
+        justify-content:space-between;
+        margin-left:-2vw;
+    }
+    .skillcard >ul > li{
+        margin:.2vw;
+    }
+.FrontEnd {
+    background-image: url('../images/designicon.png');
+    background-repeat: no-repeat;
+    background-color: lightgreen;
+    background-size:15vw;
+    background-position:bottom;
+}
+.BackEnd {
+    background-image: url('../images/backicon.png');
+    background-repeat: no-repeat;
+    background-color: lightcoral;
+    background-size: 15vw;
+    background-position: bottom;
+    color:white;
+}
+.TeamEnd {
+    background-image: url('../images/teamicon.png');
+    background-repeat: no-repeat;
+    background-color: lightblue;
+    background-size: 15vw;
+    background-position: bottom;
+
 }
 #infonavbar{
     background-color:none;
     display:flex;   
     width:100%;
 }
-#infonavbar > a{
-    font-size:2vw;
-    margin-left:2vw;
-    background-color:white;
-    padding-left:4vw;
-    padding-right:4vw;
-    border-top-left-radius:5px;
-    border-top-right-radius:5px;
+    #infonavbar > a {
+        font-size: 2vw;
+        margin-left: 2vw;
+        background-color: white;
+        padding-left: 4vw;
+        padding-right: 4vw;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        
+    }
+#active {
+    box-shadow: 2px 0px 0px 0px black;
 }
-#nonactive{
-    /*z-index:-1;*/
-    /*why does this not work*/
-}
+
 .info {
     background-color: none;
     grid-row: 7 /span 1;
@@ -186,7 +226,8 @@ body{
         display:flex;
         flex-direction:column;
         align-items:center;
-
+        margin-top:4vw;
+        margin-bottom:2vw;
            
     }
         #picresume >a{

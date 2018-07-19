@@ -15,14 +15,18 @@
     function SkillsSwap() {
         document.getElementById("maininfo").style.display = "none";
         document.getElementById("skillinfo").style.display = "flex";
-        //document.getElementById("active").style.zIndex = "-1";
-        //document.getElementById("nonactive").style.zIndex = "1";
+        document.getElementById("active").style.boxShadow = "none";
+        document.getElementById("nonactive").style.boxShadow = "2px 0px 0px 0px black";
+        document.getElementById("activehr").style.display = "none";
+        document.getElementById("nonactivehr").style.display = "block";
     }
     function InfoSwap() {
         document.getElementById("skillinfo").style.display = "none";
         document.getElementById("maininfo").style.display = "flex";
-        //document.getElementById("active").style.zIndex = "1";
-        //document.getElementById("nonactive").style.zIndex = "-1";
+        document.getElementById("nonactive").style.boxShadow = "none";
+        document.getElementById("active").style.boxShadow = "2px 0px 0px 0px black";
+        document.getElementById("activehr").style.display = "block";
+        document.getElementById("nonactivehr").style.display = "none";
     }
 
 

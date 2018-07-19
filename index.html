@@ -10,12 +10,9 @@
 <body onload="GetBG()">
     
     <div class="container">
-        <div class="WIP"><p>WIP</p></div>
         <video autoplay muted loop id="bgvid">
             <!--background autoplay video-->
-            <source id="swap1" src="images/waves.mp4" />
-            <source id="swap2" src="images/waves3.mp4" />
-            <source id="swap3" src="images/bluewater.mp4" />
+            <source src="images/bluewater.mp4" />
         </video>
         <div class="header">
             <ul>
@@ -39,12 +36,20 @@
         <div class="spacer"></div>
 
         <div id="info" class="info">
-            <div id="infonavbar"><a onclick="InfoSwap()" id="active">Info</a><a onclick="SkillsSwap()" id="nonactive">Skills</a></div>
+            <div id="infonavbar"><a onclick="InfoSwap()" id="active">Info<hr id="activehr" /></a><a onclick="SkillsSwap()" id="nonactive">Skills<hr style="display:none" id="nonactivehr" /></a> </div>
                 <div id="infocontainer">
                     <div id="skillinfo">
-                        <div class="FrontEnd skillcard"></div>
-                        <div class="BackEnd skillcard"></div>
-                        <div class="TeamEnd skillcard"></div>
+                        <div class="FrontEnd skillcard">                   
+                                <p>FRONT END</p>
+                                <ul><li>CSS3</li><li>HTML5</li><li>Responsive / Mobile Design</li><li>BootStrap</li><li>Flexbox</li><li>CSSGrid</li></ul>                           
+                        </div>
+                        <div class="BackEnd skillcard">
+                                <p>BACK END</p>
+                                <ul><li>C# / .NETFramework</li><li>OOP</li><li>TDD</li><li>MVC</li><li>ASP.Net</li><li>JavaScript</li><li>JQuery</li><li>AJAX JSON</li><li>SQL / MS SQLMS</li></ul>                  
+                        </div>
+                        <div class="TeamEnd skillcard"><p>TEAM</p>
+                        <ul><li>Agile</li><li>SCRUM</li><li>GitHub</li></ul>
+                        </div>
 
 
 
