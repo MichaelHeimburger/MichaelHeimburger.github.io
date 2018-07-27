@@ -15,7 +15,7 @@
     function SkillsSwap() {
         document.getElementById("maininfo").style.display = "none";
         document.getElementById("skillinfo").style.display = "flex";
-        document.getElementById("active").style.boxShadow = "none";
+        document.getElementById("active").style.boxShadow = "inset 0px 0px 10px rgba(0,0,0,0.5)";
         document.getElementById("nonactive").style.boxShadow = "2px 0px 0px 0px black";
         document.getElementById("activehr").style.display = "none";
         document.getElementById("nonactivehr").style.display = "block";
@@ -23,11 +23,19 @@
     function InfoSwap() {
         document.getElementById("skillinfo").style.display = "none";
         document.getElementById("maininfo").style.display = "flex";
-        document.getElementById("nonactive").style.boxShadow = "none";
+        document.getElementById("nonactive").style.boxShadow = "inset 0px 0px 10px rgba(0,0,0,0.5)";
         document.getElementById("active").style.boxShadow = "2px 0px 0px 0px black";
         document.getElementById("activehr").style.display = "block";
         document.getElementById("nonactivehr").style.display = "none";
     }
+//function SkillSwap() {
+//    var acx = document.getElementById("maininfo");
+//    var acy = document.getElementById("active");
+//    var nax = document.getElementById("skillinfo");
+
+
+
+//}
 
 
 
