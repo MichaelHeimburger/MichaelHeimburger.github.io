@@ -8,7 +8,7 @@
     <link href="css/indexstyle.css" rel="stylesheet" />
 </head>
 <body onload="GetBG()">
-    
+
     <div class="container">
         <video autoplay muted loop id="bgvid">
             <!--background autoplay video-->
@@ -18,108 +18,127 @@
             <ul>
                 <li><a href="index.html"><img id="logo" src="/images/mhlogo.png" /></a></li>
                 <li><a class="lnk" href="#info">INFO</a></li>
-                <!--<li><a class="lnk" href="#skills">SKILLS</a></li>-->
                 <li><a class="lnk" href="#projects">PROJECTS</a></li>
                 <li><a class="lnk" href="#contact">CONTACT</a></li>
             </ul>
         </div>
+        <!--------------------- LOGO IMAGE---------------------->
+
+
         <div class="sqbrkttp1 brkt"></div>
         <div class="sqbrkttp2 brkt"></div>
         <div class="sqbrktmid1 brkt"></div>
         <div class="sqbrktmid2 brkt"></div>
         <div class="sqbrktbot1 brkt"></div>
         <div class="sqbrktbot2 brkt"></div>
+
         <div class="maincontent">
             <p id="toptext">MichaelSoft</p>
             <p id="bottomtext">Software by Michael Heimburger</p>
         </div>
         <div class="spacer"></div>
+        <!-------------------- INFO --------------------------------------->
+
 
         <div id="info" class="info">
             <div id="infonavbar"><a onclick="InfoSwap()" id="active"><div id="activeinner">Info<hr id="activehr" /></div></a><a onclick="SkillsSwap()" id="nonactive"><div id="nonactiveinner">Skills<hr style="display:none" id="nonactivehr" /></div></a> </div>
-                <div id="infocontainer">
-                    <div id="skillinfo">
-                        <div class="FrontEnd skillcard">                   
-                                <p>FRONT END</p>
-                                <ul><li>CSS3</li><li>HTML5</li><li>Responsive / Mobile Design</li><li>BootStrap</li><li>Flexbox</li><li>CSSGrid</li></ul>                           
-                        </div>
-                        <div class="BackEnd skillcard">
-                                <p>BACK END</p>
-                                <ul><li>C# / .NETFramework</li><li>OOP</li><li>TDD</li><li>MVC</li><li>ASP.Net</li><li>JavaScript</li><li>JQuery</li><li>AJAX JSON</li><li>SQL / MS SQLMS</li></ul>                  
-                        </div>
-                        <div class="TeamEnd skillcard"><p>TEAM</p>
-                        <ul><li>Agile</li><li>SCRUM</li><li>GitHub</li></ul>
-                        </div>
+            <div id="infocontainer">
+                <div id="skillinfo">
+                    <div class="FrontEnd skillcard">
+                        <p>FRONT END</p>
+                        <ul><li>CSS3</li><li>HTML5</li><li>Responsive / Mobile Design</li><li>BootStrap</li><li>Flexbox</li><li>CSSGrid</li></ul>
                     </div>
-                    <div id="maininfo">
-                        <div id="picresume">
-                            <img class="head" src="/images/headshot.jpg" />   <a href="https://drive.google.com/file/d/1yUOtoegA_lKEaTueQBLu12Jn1oNJ09jo/view?usp=sharing">Current Resume</a>
-                        </div>
-                        <p> Full stack Software Developer with strong problem-Solving and algorithmic thinking skills. Currently studying a wide range of languages and concepts at coding bootcamp We Can Code IT. I would be happy to help you find the solutions you are looking for. </p>
+                    <div class="BackEnd skillcard">
+                        <p>BACK END</p>
+                        <ul><li>C# / .NETFramework</li><li>OOP</li><li>TDD</li><li>MVC</li><li>ASP.Net</li><li>JavaScript</li><li>JQuery</li><li>AJAX JSON</li><li>SQL / MS SQLMS</li></ul>
+                    </div>
+                    <div class="TeamEnd skillcard">
+                        <p>TEAM</p>
+                        <ul><li>Agile</li><li>SCRUM</li><li>GitHub</li></ul>
                     </div>
                 </div>
+                <div id="maininfo">
+                    <div id="picresume">
+                        <img class="head" src="/images/headshot.jpg" />   <a href="https://drive.google.com/file/d/1JjAcK1DRxX96lFDImd-8Vbz7MFz0uqtv/view?usp=sharing">Current Resume</a>
+                    </div>
+                    <p> Full stack Software Developer with strong problem-Solving and algorithmic thinking skills. Currently studying a wide range of languages and concepts at coding bootcamp We Can Code IT. I would be happy to help you find the solutions you are looking for. </p>
+                </div>
+            </div>
         </div>
+
         <div class="spacer2"></div>
-        <!--<div id="skills" class="skills">
-            <p>TEST</p>
-        </div>-->
+
+
         <div class="spacer3"></div>
+        <!-------------------------- PROJECTS ----------------------------------------->
+
+
         <div id="projects" class="projects">
-            <a onclick="InfoSTK()" class="pj stkmkt"><p class="p">Stock Market</p></a>
-            <a onclick="InfoVPS()" class="pj vpsh"><p class="p">Virtual Pet Shelter</p></a>
-            <a onclick="InfoTUS()" class="pj villa"><p class="p">Tuscany Villa Webpage</p></a>
-            <a onclick="InfoMSO()" class="pj this"><p class="p">MichaelSoft Webpage</p></a>
-            <a onclick="InfoCTY()" class="pj citymvc"><p class="p">MVC City Reviews</p></a>
+            <a onclick="Info(this.className)" class="stockmarket pj stkmkt">
+                <p class="pjVidText">Stock Market</p>
+
+            </a>
+            <a onclick="Info(this.className)" class="virtualpetshelter pj vpsh">
+                <p class="pjVidText">Virtual Pet Shelter</p>
+
+
+            </a>
+            <a onclick="Info(this.className)" class="tuscanyvilla pj villa">
+                <p class="pjVidText">Tuscany Villa Site</p>
+            </a>
+            <a onclick="Info(this.className)" class="mvccityreviews pj citymvc">
+                <p class="pjVidText">MVC City Reviews</p>
+
+            </a>
+            <a onclick="Info(this.className)" class="rtafeedbackcompiler pj rta">
+                <p class="pjVidText">RTA Feedback Compiler</p>
+
+            </a>
+            <a onclick="Info(this.className)" class="mvcvirtualwardrobe pj wardrobe">
+                <p class="pjVidText">MVC Virtual Wardrobe</p>
+
+            </a>
+
         </div>
 
         <div class="spacer4"></div>
         <div id="contact" class="contact">
             <ul>
                 <li><img src="images/mail.png" /></li>
-               <li> <p>EMAIL : mrheimburger45@gmail.com</p>  </li>
-                <li><img src="images/phone.png" /> 
+                <li> <p>EMAIL : mrheimburger45@gmail.com</p>  </li>
+                <li><img src="images/phone.png" />
                 <li><p>PHONE : 440-364-9337</p>  </li>
                 <li> <a href="https://github.com/MichaelHeimburger"><img src="images/github.png" /></a> <a href="https://www.linkedin.com/in/mheimburger/"><img src="images/linkedin.jpg" /> </a> <a href="https://www.hackerrank.com/mrheimburger45"><img src="images/hrank.png" /></a></li>
             </ul>
         </div>
+
+        <!--------------------------------------- MODAL CONTENT---------------------------->
+
+
         <div class="infowin" onclick="hideinfo()">
             <div class="center">
-                <div class="stkmktinfo innerinfo">
-                    <img src="images/stockmarketpic.png" />
-                    <img src="images/stockmarketpic2.png" />
-                    <p>A C# console app that makes heavy use of OOP - by allowing the user to name any number of stocks and then trade them on an ever changing market. The stocks the user creates are added to a list which is displayed back to the user along with a randomly generated price, price history, and the amount the user currently owns. Prices are randomly generated and can be determined by in app "news" events allowing the user some sense of prediction. <br />For more information feel free to contact me or use the github link below</p>
+                <div class="stockmarket innerinfo">
+                    <video autoplay muted loop class="modelvid">  <source src="images/Video/Stock_Market.mp4" type="video/mp4" />   </video>
                     <a href="https://github.com/MichaelHeimburger/Stock-Market">GITHUB</a>
                 </div>
-                <div class="Virtualpetinfo innerinfo">
-                    <img src="images/petshelter.png" />
-                    <img src="/images/petshelter2.png" />
-                    <p>A C# console app using lists,  OOP, and inheritance. This app allows the user to take control of a "virtual pet shelter" in which they can manage the needs of a list of virtual pet classes. Upon each user input the nees of the classes change requing the user to feed/water/play with the group of pets to raise their values. Upon opening the application the user can choose between a manager or volunteer, each having different roles and methods to take use of while modifying the same classes. <br />For more information feel free to contact me or use the github link below</p>
+                <div class="virtualpetshelter Virtualpetinfo innerinfo">
+                    <video autoplay muted loop class="modelvid"><source src="images/Video/Virtual_Pet_Shelter.mp4" type="video/mp4" /> </video>
                     <a href="https://github.com/MichaelHeimburger/Virtual-Pet-Shelter-Project">GITHUB</a>
                 </div>
-                <div class="tucanyvillainfo innerinfo">
-                    <img src="images/tuskanyvilla.png" />
-                    <img src="images/tuskanyvilla2.PNG" />
-                    <p>A Webpage made using CSS, CSSGRID,  FlexBox, and HTML5. This page was a project for WCCI with the task of replicating a webpage based on an image. The resulting page has a sleek modernist design and a responsive layout modeled enitrely with Grid/Flex-box. ,<br />For more information feel free to contact me or use the github link below</p>
-                    <a href="https://github.com/MichaelHeimburger/TuskanyVilla">GITHUB</a>
+                <div class="tuscanyvilla innerinfo">
+                    <video autoplay muted loop class="modelvid"><source src="images/Video/Tuscannyvilla.mp4" type="video/mp4" /> </video>
                 </div>
-                <div class="michaelsoftinfo innerinfo">
-                    <img src="images/sitepic.png" />
-                    <img src="/images/sitepic2.png" />
-                    <p>The site your are visiting currently has been handcrafted entirely by myself with CSS, CSS-Grid, Flex-Box, HTML5, and Javascript. This current webpage keeps the same content-size proportions on mobile and desktop maintaining both design and visibility. Always  a work in progress, this site will be updated and is never final. <br />For more information feel free to contact me or if you would like to view the code for this website the github link is below</p>
-                    <a href="https://github.com/MichaelHeimburger/MichaelHeimburger.github.io">GITHUB</a>
-                </div>
-                <div class="citymvcinfo innerinfo">
-                    <img src="images/mvccity1.png" />
-                    <img src="images/mvccity2.png" />
-                    <img src="images/mvccity3.png" />
-                    <img src="images/mvccity4.png" />
-                    <p>MVC project using the .NET Framework, Bootstrap, and CSS. This review site was made using code first MVC design by scaffolding the controllers from the models. The site allows users to review different citys theyve been to and read other reviews users have posted.<br /> Feel free to contact me for more info or use the github link below.</p>
+                <div class="mvccityreviews  innerinfo">
+                    <video autoplay muted loop class="modelvid"> <source src="images/Video/Review_mvc.mp4" type="video/mp4" /> </video>
                     <a href="https://github.com/MichaelHeimburger/Review_Site_MVC_Project">GITHUB</a>
                 </div>
+                <div class="rtafeedbackcompiler  innerinfo">
 
+                </div>
+                <div class="mvcvirtualwardrobe  innerinfo">
 
+                </div>
             </div>
-
         </div>
     </div>
 </body>

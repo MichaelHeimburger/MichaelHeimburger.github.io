@@ -28,51 +28,19 @@
         document.getElementById("activehr").style.display = "block";
         document.getElementById("nonactivehr").style.display = "none";
     }
-//function SkillSwap() {
-//    var acx = document.getElementById("maininfo");
-//    var acy = document.getElementById("active");
-//    var nax = document.getElementById("skillinfo");
-
-
-
-//}
-
-
-
-
-    function InfoSTK() {
-        document.getElementsByClassName('infowin')[0].style.display = "flex";
-        document.getElementsByClassName('center')[0].style.display = "flex";
-        document.getElementsByClassName('stkmktinfo')[0].style.display = "block";
-    }
-    function InfoVPS() {
-        document.getElementsByClassName('infowin')[0].style.display = "flex";
-        document.getElementsByClassName('center')[0].style.display = "flex";
-        document.getElementsByClassName('Virtualpetinfo')[0].style.display = "block";
-    }
+function Info(x) {
+    document.getElementsByClassName('infowin')[0].style.display = "flex";
+    document.getElementsByClassName('center')[0].style.display = "flex";
+    var classArray = x.split(" ");
+    document.getElementsByClassName(classArray[0])[1].style.display="block" // function takes in the a tag and finds the next object with the same first class name
+ }
     function hideinfo() {
 
         document.getElementsByClassName("infowin")[0].style.display = "none";
         document.getElementsByClassName('center')[0].style.display = "none";
-        document.getElementsByClassName('stkmktinfo')[0].style.display = "none";
-        document.getElementsByClassName('Virtualpetinfo')[0].style.display = "none";
-        document.getElementsByClassName('tucanyvillainfo')[0].style.display = "none";
-        document.getElementsByClassName('michaelsoftinfo')[0].style.display = "none";
-        document.getElementsByClassName('citymvcinfo')[0].style.display = "none";
+        var leng = document.getElementsByClassName('innerinfo').length; // function looks for all innerinfo divs and sets their display to none
+        for (i = 0; i < leng; i++) {
+            document.getElementsByClassName('innerinfo')[i].style.display = "none";
+        }
 
     }
-    function InfoTUS() {
-        document.getElementsByClassName('infowin')[0].style.display = "flex";
-        document.getElementsByClassName('center')[0].style.display = "flex";
-        document.getElementsByClassName('tucanyvillainfo')[0].style.display = "block";
-    }
-    function InfoMSO() {
-        document.getElementsByClassName('infowin')[0].style.display = "flex";
-        document.getElementsByClassName('center')[0].style.display = "flex";
-        document.getElementsByClassName('michaelsoftinfo')[0].style.display = "block";
-}
-function InfoCTY() {
-    document.getElementsByClassName('infowin')[0].style.display = "flex";
-    document.getElementsByClassName('center')[0].style.display = "flex";
-    document.getElementsByClassName('citymvcinfo')[0].style.display = "block";
-}
