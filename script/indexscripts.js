@@ -32,7 +32,7 @@ function Info(x) {
     document.getElementsByClassName('infowin')[0].style.display = "flex";
     document.getElementsByClassName('center')[0].style.display = "flex";
     var classArray = x.split(" ");
-    document.getElementsByClassName(classArray[0])[1].style.display="block" // function takes in the a tag and finds the next object with the same first class name
+    document.getElementsByClassName(classArray[0])[1].style.display="flex" // function takes in the a tag and finds the next object with the same first class name
  }
     function hideinfo() {
 

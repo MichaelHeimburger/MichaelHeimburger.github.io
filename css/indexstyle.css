@@ -210,11 +210,6 @@ body{
 #nonactive {
     box-shadow: inset 0px 0px 10px rgba(0,0,0,0.5);
 }
-#activeinner{
-    /*/*box-shadow: 0px 0px 0px 2px black;*/*/
-    /*width:100%;
-    height:100%*/;
-}
 .info {
     background-color: none;
     grid-row: 7 /span 1;
@@ -380,6 +375,18 @@ a{
     height:100%;
     width:100%;
     display:none;
+    flex-direction:row;
+}
+/*.innerinfocoltwo{
+    display:flex;
+    flex-direction:column;
+    justify-content:flex-start;
+
+}*/
+.modelvid {
+    height: 30vw;
+    width: 75%;
+    margin:0;
 }
 .center {
     background-color: white;
@@ -387,7 +394,7 @@ a{
     width: 70%;
     position: fixed;
     animation-name: animatetop;
-    animation-duration: 1s
+    animation-duration: 1s;
 }
 @keyframes animatetop {
     from {
@@ -399,4 +406,22 @@ transform:translateY(0%);
 opacity: 1;
     }
 
+}
+@media screen and (max-width: 1000px){
+    .innerinfo {
+        flex-direction: column;
+        align-self: center;
+    }
+    .modelvid {
+        align-self: center;
+    }
+}
+.innerinfocoltwo{
+    align-items:center;
+    align-self:center;
+    justify-content:center;
+    margin:0;
+}
+.innerinfocoltwo a img {
+    height: 40px;
 }
