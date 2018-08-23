@@ -2,13 +2,15 @@
     var x = Math.floor((Math.random() * 10) + 1);
     var vid = document.getElementById("bgvid");
     if (x < 4) {
-        vid.src = "images/waves.mp4";
+        //vid.src = "images/waves.mp4";
+        vid.src = "images/Video/cloudsone.mp4";
     }
     else if (x < 8) {
-        vid.src = "images/waves3.mp4";
+        vid.src = "images/Video/rainforestone.mp4";
     }
     else {
-        vid.src = "images/bluewater.mp4";
+        vid.src = "images/Video/bluewater.mp4";
+
     }
 }
 
